@@ -1,0 +1,44 @@
+<%- include('partials/head.ejs') %>
+    <div class="container col-6 text-center">
+        <div class="container w-75 ms-auto">
+            <% if (signupMessage.length>0) { %>
+                <div class="alert alert-danger">
+                    <%= signupMessage %>
+                </div>
+                <% } %>
+
+                    <% if (signupMessageRegister.length>0) { %>
+                        <div class="alert alert-success">
+                            <%= signupMessageRegister %>
+                        </div>
+                        <% } %>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-6 m-4 ">
+                <form class="bg-subtile align-items-center justify-content-center" action="/signup" method="POST">
+                    <div class="mb-5 w-75">
+                        <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail"
+                            aria-describedby="emailHelp" />
+                    </div>
+                    <div class="mb-5 w-75">
+                        <label for="exampleInputPassword1" class="form-label text-light">Password</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword" />
+                    </div>
+                    <div class="mb-5 w-75">
+                        <button type="log-in" class="btn btn-info fw-bold w-100">
+                            signup
+                        </button>
+                    </div>
+                    <div class="mb-5 w-75">
+                        <a href="/login">Go To Login</a>
+                    </div>
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <%- include('partials/bootstrap.ejs') %>
+        </form>

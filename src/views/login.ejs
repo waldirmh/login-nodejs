@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+
+<%- include('partials/head.ejs') %>
+
+    <body>
+        <div class="container col-7 text-center ">
+            <div class="row align-items-center">
+                <div class="container">
+                    <% if (loginMessage.legth>0) { %>
+                        <div class="alert alert-danger">
+                            <%= loginMessage %>
+                        </div>
+                        <% } %>
+                        
+                </div>
+
+                <div class="col-5">
+                    <img src="./img/goku2.jpg" class="img-fluid h-50" alt="imagens" />
+                </div>
+                <div class="col-7">
+                    <form class="bg-subtile" action="/profile" method="POST">
+                        <div class="mb-3 w-50">
+                            <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail"
+                                aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 w-50">
+                            <label for="exampleInputPassword1" class="form-label text-light">Password</label>
+                            <input type="password" name="password" class="form-control" id="exampleInputPassword" />
+                        </div>
+                        <div class="mb-3 mt-5 w-50">
+                            <button type="log-in" class="btn btn-info fw-bold w-100">
+                                Log in
+                            </button>
+                        </div>
+                    </form>
+                    <div class="mb-3 form-check w-50">
+                        <label class="form-check-label text-light" for="exampleCheck1">forgot my password</label>
+                    </div>
+
+                    <div class="mb-3 mt-50 w-50">
+                        <a href="/signup">
+                            <button type="submit" class="btn border-info mt-50 text-light fw-bold w-100 mt-5">
+                                Sign up
+                            </button>
+                            <!-- SIGNUP   -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('partials/bootstrap.ejs')%>
+    </body>
+    <!-- </html> -->

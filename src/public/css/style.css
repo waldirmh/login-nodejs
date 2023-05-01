@@ -1,0 +1,20 @@
+body {
+  background-color: black !important;
+  overflow: hidden;
+}
+
+.container {
+  background-color: black;
+  padding: 5px;
+  margin-top: 10%;
+  /*  border: rgb(0, 253, 30) solid 2px; */
+}
+
+.exit {
+  width: 80px;
+  height: 40px;
+  border: 1px solid RGB(13,202,240);
+}
+.exit:hover{
+  background: RGB(13,202,240);
+}
