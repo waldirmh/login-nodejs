@@ -1,5 +1,6 @@
+require("dotenv").config();
 module.exports = {
   mongodb: {
-    URI: "mongodb://0.0.0.0:27017/node-login",
+    URI: process.env.MONGO_URI,
   },
 };
